@@ -101,7 +101,7 @@ python src/augmentation.py
 
 ## Шаг 5: Обучение модели
 
-Используем YOLOv11:
+Используем YOLOv11, пишем команду:
 
 ```bash
 yolo train \
@@ -109,7 +109,7 @@ yolo train \
   model=yolo11n.pt \
   imgsz=640 \
   batch=16 \
-  epochs=50 \
+  epochs=50
 ```
 
 Пример второй итерации (гиперпараметры изменены):
@@ -120,7 +120,7 @@ yolo train \
   model=runs/detect/train/weights/best.pt \
   imgsz=640 \
   batch=8 \
-  epochs=10 \
+  epochs=10
 ```
 
 ---
